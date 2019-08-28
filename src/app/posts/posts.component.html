@@ -1,0 +1,6 @@
+
+<div *ngFor = "let inf of inform">
+    <app-post  [postData]="inf"></app-post>
+</div>
+
+<app-new-post (outToParent)='receiveFromChild($event)'></app-new-post>

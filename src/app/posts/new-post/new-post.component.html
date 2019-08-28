@@ -1,0 +1,5 @@
+<form action="">
+    <input #title type="text" placeholder="Лучшее название, это которое первое пришло в голову..." #title>
+    <textarea #content placeholder="Шедевр начинается с малого..." ></textarea>
+    <button (click)='sendToParent(title.value, content.value)'>Добавить пост!</button>
+</form>
